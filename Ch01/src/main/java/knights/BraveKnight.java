@@ -22,3 +22,26 @@ public class BraveKnight implements Knight {
         quest.embark();
     }
 }
+
+    /*
+
+    // 用于演示 骑士待用吟游诗人不好的方式
+    // 骑士不应该去管理吟游诗人
+public class BraveKnight implements Knight {
+
+    private Quest quest;
+    private Minstrel minstrel;
+
+
+    public BraveKnight(Quest quest,Minstrel minstrel) {
+        this.quest = quest;
+        this.minstrel = minstrel;
+    }
+
+    public void embarkOnQuest() {
+        minstrel.singBeforeQuest();
+        quest.embark();
+        minstrel.singAfterQuest();
+    }
+}
+    */
